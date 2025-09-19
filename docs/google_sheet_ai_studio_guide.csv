@@ -1,0 +1,7 @@
+﻿단계,설명
+1단계. Google Sheet로 CSV 업로드,Google Drive → 새 시트 만들기 → 파일 가져오기 → sample_dataset.csv 업로드 → 새 시트로 삽입
+2단계. 시트 정리,"첫 줄 헤더 유지 (질문, 답변 / 조건, 추천 상품 / ID, 텍스트), 시트 이름 구분 (FAQ, 추천, 분석)"
+3단계. Google Cloud에서 Sheets API 연결,Google Cloud Console → API 및 서비스 → 라이브러리 → Google Sheets API 사용 설정 → 사용자 인증 정보 → API 키 생성
+4단계. Google Sheet 권한 열기,시트를 공유 → 링크 있는 모든 사용자(보기 권한) 또는 서비스 계정 이메일 추가
+5단계. Google AI Studio에서 데이터 소스 연결,AI Studio 접속 → 데이터 연결 → Google Sheets 선택 → Sheet URL 붙여넣기 + API 키 입력
+6단계. 활용 예시,"FAQ 앱(질문-답변), 추천 앱(조건-추천), 분석/요약 앱(텍스트 요약)"

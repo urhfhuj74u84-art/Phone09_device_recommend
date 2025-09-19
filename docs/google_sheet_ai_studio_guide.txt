@@ -1,0 +1,40 @@
+Google Sheet CSV → AI Studio 연결 가이드
+
+1단계. Google Sheet로 CSV 업로드
+
+1.  Google Drive 접속 → 새로 만들기 → Google 스프레드시트 → 빈 시트 열기
+2.  메뉴에서 파일 → 가져오기 → 업로드 선택
+3.  sample_dataset.csv 파일 업로드
+4.  “새 시트로 삽입” 선택 → 데이터가 시트 안에 들어감
+
+2단계. 시트 정리
+
+-   첫 번째 줄(헤더)은 질문, 답변 / 조건, 추천 상품 / ID, 텍스트 이런
+    형식 유지
+-   시트 이름을 FAQ, 추천, 분석 등으로 구분해두면 편리
+
+3단계. Google Cloud에서 Sheets API 연결
+
+1.  Google Cloud Console → API 및 서비스 → 라이브러리
+2.  Google Sheets API 검색 후 사용 설정
+3.  API 및 서비스 → 사용자 인증 정보 → API 키 생성
+4.  API 키 복사
+
+4단계. Google Sheet 권한 열기
+
+-   시트를 공유 → 링크 있는 모든 사용자(보기 권한) 또는 서비스 계정
+    이메일 추가
+-   이렇게 해야 AI Studio가 데이터 접근 가능
+
+5단계. Google AI Studio에서 데이터 소스 연결
+
+1.  Google AI Studio 접속
+2.  데이터 연결 → Google Sheets 선택
+3.  Sheet URL 붙여넣기 + API 키 입력
+4.  데이터 연결 후 프롬프트 기반 앱 생성 가능
+
+6단계. 활용 예시
+
+-   FAQ 앱: “질문 | 답변” 구조 → 사용자가 질문 입력 시 답변 출력
+-   추천 앱: 조건 입력 시 → 추천 상품 출력
+-   분석/요약 앱: 텍스트 데이터를 불러와 → 자동 요약/리포트 생성
