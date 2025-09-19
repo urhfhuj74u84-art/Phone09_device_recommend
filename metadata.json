@@ -1,0 +1,5 @@
+{
+  "name": "AI Smartphone Recommender",
+  "description": "An intelligent web application that recommends the top 3 smartphones based on your personal preferences, powered by Google's Gemini AI. Simply answer a few questions about what you value in a phone, and get tailored suggestions instantly.",
+  "requestFramePermissions": []
+}
