@@ -32,7 +32,7 @@ const App: React.FC = () => {
       setAppState(AppState.RESULTS);
     } catch (err) {
       console.error(err);
-      setError('Sorry, we couldn\'t get recommendations at this time. Please try again later.');
+      setError('추천 결과를 가져오지 못했습니다. 잠시 후 다시 시도해 주세요.');
       setAppState(AppState.WELCOME);
     }
   }, []);
